@@ -24,7 +24,7 @@ cd path/to/new/project
 
 3. Setup your environment:
 ```
-cp .env.example
+cp .env.example .env
 ```
 
 4. Change the values you need in the `.env` file.
