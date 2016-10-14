@@ -1,9 +1,9 @@
 # Silex Template
-================
+
 This Silex template has been written to shorten the setup process of a new Silex Application.
 
 ## Pre-installation
--------------------
+
 You will need the following program installed in your computer:
 
 - [PHPUnit](https://phpunit.de/manual/current/en/installation.html)
@@ -11,7 +11,7 @@ You will need the following program installed in your computer:
 
 
 ## Installation
----------------
+
 1. Create your project:
 ```
 composer create-project lracicot/silex-template path/to/new/project
@@ -37,7 +37,6 @@ composer run
 6. Try it! http://localhost:8000
 
 ## What's included?
--------------------
 
 ### Libraries
 - [monolog](http://silex.sensiolabs.org/doc/master/providers/monolog.html) - Logging for PHP.
@@ -48,7 +47,7 @@ composer run
 - [jQuery](https://jquery.com/) - [The "J" word](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.qadonrt62). Yep, I said it. Are do you feel about it ?
 
 ## Optional dependencies
-------------------------
+
 The doctrine DBAL
 ```
 conposer require doctrine/dbal
