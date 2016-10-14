@@ -1,5 +1,5 @@
 {
-    "name": "your-vendor-name/package-name",
+    "name": "lracicot/silex-template",
     "description": "A small silex template for scalable web application",
     "require": {
         "php": "^5.3.3 || ^7.0",
