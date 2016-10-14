@@ -1,0 +1,17 @@
+{
+    "require": {
+        "silex/silex": "~2.0",
+        "monolog/monolog": "^1.21",
+        "vlucas/phpdotenv": "^2.4",
+        "twig/twig": "^1.26"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "scripts": {
+        "run": [
+            "echo 'Started web server on http://localhost:8000'",
+            "php -S localhost:8000 -t web"
+        ]
+    }
+}
