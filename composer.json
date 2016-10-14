@@ -1,5 +1,8 @@
 {
+    "name": "your-vendor-name/package-name",
+    "description": "A small silex template for scalable web application",
     "require": {
+        "php": "^5.3.3 || ^7.0",
         "silex/silex": "~2.0",
         "monolog/monolog": "^1.21",
         "vlucas/phpdotenv": "^2.4",
