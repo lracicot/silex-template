@@ -39,7 +39,7 @@ Try it! [http://localhost:8000](http://localhost:8000)
 - [twig](http://silex.sensiolabs.org/doc/master/providers/twig.html) - Templating system, with a default base template.
 - A default controller, with the [Controller Provider](http://silex.sensiolabs.org/doc/master/providers.html#controller-providers) system.
 - [bootstrap](https://getbootstrap.com) - The CSS framework.
-- [jQuery](https://jquery.com/) - [The "J" word](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.qadonrt62). Yep, I said it. Are do you feel about it ?
+- [jQuery](https://jquery.com/) - [The "J" word](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f#.qadonrt62). Yep, I said it. How do you feel about it ?
 
 ## Optional dependencies
 
