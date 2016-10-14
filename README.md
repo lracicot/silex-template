@@ -12,29 +12,24 @@ You will need the following program installed in your computer:
 
 ## Installation
 
-1. Create your project:
+Create your project:
 ```
 composer create-project lracicot/silex-template path/to/new/project
 ```
-
-2. Go to your project:
+Go to your project:
 ```
 cd path/to/new/project
 ```
-
-3. Setup your environment:
+Setup your environment:
 ```
 cp .env.example .env
 ```
-
-4. Change the values you need in the `.env` file.
-
-5. Start the server:
+Change the values you need in the `.env` file.
+Start the server:
 ```
 composer run
 ```
-
-6. Try it! http://localhost:8000
+Try it! [http://localhost:8000](http://localhost:8000)
 
 ## What's included?
 
