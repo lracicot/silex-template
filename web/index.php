@@ -1,6 +1,7 @@
 <?php
 
 define('BASEPATH', dirname(__DIR__));
+define('BASEURL', '/');
 
 require_once BASEPATH.'/vendor/autoload.php';
 
@@ -13,6 +14,9 @@ $app = new Silex\Application();
 if ($_ENV['ENVIRONMENT'] == 'development') {
     $app['debug'] = true;
 }
+$app->register(new Silex\Provider\AssetServiceProvider(), [
+  'assets.base_path' => BASEURL
+]);
 
 $app->register(new Silex\Provider\MonologServiceProvider(), [
     'monolog.logfile' => BASEPATH.'/var/logs/'.$_ENV['ENVIRONMENT'].'.log',
@@ -23,6 +27,6 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => BASEPATH.'/app/Resources/views',
 ));
 
-$app->mount('/', new MyApp\DefaultController());
+$app->mount(BASEURL, new MyApp\DefaultController());
 
 $app->run();
