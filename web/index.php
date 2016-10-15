@@ -1,13 +1,13 @@
 <?php
 
 define('BASEPATH', dirname(__DIR__));
-define('BASEURL', '/');
 
 require_once BASEPATH.'/vendor/autoload.php';
 
 $dotenv = new Dotenv\Dotenv(BASEPATH);
 $dotenv->load();
 $dotenv->required('ENVIRONMENT')->allowedValues(['development', 'staging', 'testing', 'production']);
+$dotenv->required('BASEURL');
 
 $app = new Silex\Application();
 
@@ -15,7 +15,7 @@ if ($_ENV['ENVIRONMENT'] == 'development') {
     $app['debug'] = true;
 }
 $app->register(new Silex\Provider\AssetServiceProvider(), [
-  'assets.base_path' => BASEURL
+  'assets.base_path' => $_ENV['BASEURL']
 ]);
 
 $app->register(new Silex\Provider\MonologServiceProvider(), [
@@ -27,6 +27,6 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => BASEPATH.'/app/Resources/views',
 ));
 
-$app->mount(BASEURL, new MyApp\DefaultController());
+$app->mount($_ENV['BASEURL'], new MyApp\DefaultController());
 
 $app->run();
