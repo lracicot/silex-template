@@ -36,6 +36,7 @@ Try it! [http://localhost:8000](http://localhost:8000)
 When you are deploying, there are a few configuration you might want to change. Here are the available configurations:
 
 **ENVIRONMENT**: Can be _development_, _staging_, _testing_ or _production_ (default: _development_)
+
 **BASEURL**: If you are running Silex in a subdirectory, you can change this. It will make the routes and the assets work.
 
 ## What's included?
