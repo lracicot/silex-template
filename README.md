@@ -27,7 +27,7 @@ cp .env.example .env
 Change the values you need in the `.env` file.
 Start the server:
 ```
-composer run
+COMPOSER_PROCESS_TIMEOUT=0 composer run
 ```
 Try it! [http://localhost:8000](http://localhost:8000)
 
