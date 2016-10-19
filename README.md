@@ -51,12 +51,17 @@ When you are deploying, there are a few configuration you might want to change. 
 
 ## Optional dependencies
 
+The security bundle
+```
+composer require symfony/security
+```
+
 The doctrine DBAL
 ```
 conposer require doctrine/dbal
 ```
 
-A doctrine ORM service Provider
+A doctrine ORM service provider
 ```
 composer require dflydev/doctrine-orm-service-provider
 ```

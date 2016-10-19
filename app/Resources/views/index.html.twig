@@ -1,11 +1,29 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<p>Welcome to the lracicot\silex-template!</p>
-<p>
-  You can start by renaming the <code>MyApp</code> namespace to whatever you want, and don't forget to load your new application in <code>index.php</code>.
-</p>
-<p>
-  All the views are located in <code>app/Resources/views</code>. You may want to change this twig configuration.
-</p>
+<div class="page-header">
+  <h1>Welcome to the lracicot\silex-template!</h1>
+</div>
+<h2>Get started</h2>
+<div class="row">
+  <div class="col-md-7 col-sm-12">
+    <h4>Namespace</h4>
+    You can start by renaming the <code>MyApp</code> namespace to whatever you want, and don't forget to also rename it in <code>index.php</code>.
+  </div>
+  <div class="col-md-7 col-sm-12">
+    <h4>URL</h4>
+    The detected / configured url is: <code>{{ app.absolute_url }}</code>. If this is not ok, you can change the <code>BASEURL</code>
+  </div>
+</div>
+<h2>Start coding your app!</h2>
+<div class="row">
+  <div class="col-md-7 col-sm-12">
+    <h4>Views</h4>
+    All the views are located in <code>app/Resources/views</code>. You may want to change this twig configuration.
+  </div>
+  <div class="col-md-7 col-sm-12">
+    <h4>Controllers</h4>
+    This controller is located at <code>src/MyApp/DefaultController.php</code>. You can customize your app directory structure. If you do so, don't forget to load the right controller namespaces in <code>index.php</code>
+  </div>
+</div>
 {% endblock %}
