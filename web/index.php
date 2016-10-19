@@ -45,6 +45,19 @@ $app['absolute_url'] = function () {
     return $base_url.$_ENV['BASEURI'];
 };
 
+
+/**
+ * Uncomment this if you use doctrine, or delete it.
+ */
+// $app->register(new Silex\Provider\DoctrineServiceProvider(), [
+//     'db.options' => [
+//         'driver'   => 'pdo_mysql',
+//         'user'     => $_ENV['DB_USER'],
+//         'password' => $_ENV['DB_PASS'],
+//         'dbname'   => $_ENV['DB_NAME'],
+//     ],
+// ]);
+
 $app->mount($_ENV['BASEURI'], new MyApp\DefaultController());
 
 $app->run();
