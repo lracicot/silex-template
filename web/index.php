@@ -24,7 +24,10 @@ $app->register(new Silex\Provider\MonologServiceProvider(), [
 ]);
 
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => BASEPATH.'/app/Resources/views',
+    'twig.path' => [
+        BASEPATH.'/app/Resources/views',
+        BASEPATH.'/src/MyApp/Resources/views'
+    ],
 ));
 
 $app['absolute_url'] = function () {
