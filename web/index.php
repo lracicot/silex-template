@@ -28,6 +28,10 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
         BASEPATH.'/app/Resources/views',
         BASEPATH.'/src/MyApp/Resources/views'
     ],
+    'twig.options' => [
+        'cache' => dirname(__DIR__).'/var/cache',
+        'strict_variables' => true
+    ]
 ));
 
 $app['absolute_url'] = function () {
