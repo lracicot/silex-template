@@ -25,6 +25,10 @@ Setup your environment:
 cp .env.example .env
 ```
 Change the values you need in the `.env` file.
+Run the tests
+```
+phpunit
+```
 Start the server:
 ```
 COMPOSER_PROCESS_TIMEOUT=0 composer run
