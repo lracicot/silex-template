@@ -27,11 +27,11 @@ cp .env.example .env
 Change the values you need in the `.env` file.
 Run the tests
 ```
-phpunit
+composer test
 ```
 Start the server:
 ```
-COMPOSER_PROCESS_TIMEOUT=0 composer run
+php -S localhost:8000 -t web
 ```
 Try it! [http://localhost:8000](http://localhost:8000)
 
