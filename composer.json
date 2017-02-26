@@ -18,5 +18,9 @@
             "echo 'Started web server on http://localhost:8000'",
             "php -S localhost:8000 -t web"
         ]
+    },
+    "require-dev": {
+        "symfony/browser-kit": "^3.2",
+        "symfony/css-selector": "^3.2"
     }
 }
