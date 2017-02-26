@@ -58,7 +58,7 @@ composer require symfony/security
 
 The doctrine DBAL
 ```
-conposer require doctrine/dbal
+composer require doctrine/dbal
 ```
 
 A doctrine ORM service provider
