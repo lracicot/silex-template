@@ -20,9 +20,9 @@ Go to your project:
 ```
 cd path/to/new/project
 ```
-Add the pre-commit git hook:
+Add git and the pre-commit git hook:
 ```
-ln -s ../../pre-commit.php .git/hooks/pre-commit
+git init && ln -s ../../pre-commit.php .git/hooks/pre-commit
 ```
 Setup your environment:
 ```
