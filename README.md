@@ -28,7 +28,8 @@ Setup your environment:
 ```
 cp .env.example .env
 ```
-Change the values you need in the `.env` file.
+**Change the values you need in the `.env` file.**
+
 Run the tests
 ```
 composer test
