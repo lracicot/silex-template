@@ -20,7 +20,11 @@
         ],
         "test": [
             "phpunit"
-        ]
+        ],
+	"post-create-project-cmd": [
+	    "git init",
+	    "ln -s ../../pre-commit.php .git/hooks/pre-commit"
+	]
     },
     "require-dev": {
         "symfony/browser-kit": "^3.2",
