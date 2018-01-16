@@ -61,9 +61,8 @@ $app['absolute_url'] = function () {
     return $base_url.$_ENV['BASEURI'];
 };
 
-
 /**
- * Uncomment this if you use doctrine, or delete it.
+ * Uncomment this if you use doctrine with mysql
  */
 // $app->register(new Silex\Provider\DoctrineServiceProvider(), [
 //     'db.options' => [
@@ -74,7 +73,40 @@ $app['absolute_url'] = function () {
 //     ],
 // ]);
 
-// We mount the default contorller.
+/**
+ * Uncomment this if you use doctrine with sqlite
+ */
+// $app->register(new Silex\Provider\DoctrineServiceProvider(), [
+//     'db.options' => [
+//         'url' => 'sqlite:///'.BASEPATH.'/data.db',
+//     ],
+// ]);
+
+/**
+ * Uncomment this to use a session-based authentication
+ */
+// $app->register(new Silex\Provider\SessionServiceProvider());
+
+/**
+ * Uncomment this to use the security bundle
+ */
+// $app->register(new Silex\Provider\SecurityServiceProvider(), array(
+//     'security.firewalls' => array(
+//         'login' => array(
+//             'pattern' => '^/login$',
+//         ),
+//         'secured' => array(
+//             'pattern' => '^(?!/register).*$',
+//             'form' => array('login_path' => '/login', 'check_path' => '/login_check'),
+//             'users' => function () use ($app) {
+//                 return new UserProvider($app['db']);
+//             },
+//             'logout' => array('logout_path' => '/logout', 'invalidate_session' => true),
+//         ),
+//     )
+// ));
+
+// We mount the default controller.
 // You can add more controllers here
 $app->mount($_ENV['BASEURI'], new MyApp\DefaultController());
 
