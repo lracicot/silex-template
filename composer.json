@@ -6,9 +6,9 @@
         "silex/silex": "~2.0",
         "monolog/monolog": "^1.21",
         "vlucas/phpdotenv": "^2.4",
-        "twig/twig": "^1.26",
         "symfony/asset": "^3.1",
-        "symfony/twig-bridge": "^3.1"
+        "symfony/twig-bridge": "^3.1",
+        "twig/twig": "^2.4"
     },
     "autoload": {
         "psr-0": { "": "src/" }
