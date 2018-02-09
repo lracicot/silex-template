@@ -1,3 +1,7 @@
+
+**WARNING**: The [end of life of Silex](https://symfony.com/blog/the-end-of-silex) has been set for June 2018. This package will be no longer maintained. Please use [Symfony 4](https://symfony.com/doc/current/index.html).
+
+
 # Silex Template
 
 This Silex template has been written to shorten the setup process of a new Silex Application.
